@@ -1,0 +1,237 @@
+:root {
+    --green: #01C698;
+    --dkGreen: #01634c;
+    --ltGreen: #80e3cc;
+    --xltGreen: #e6f9f5;
+    --yellow: #FFB601;
+    --dkYellow: #805b01;
+    --ltYellow: #ffdb80;
+
+    --white: #fffefc;
+    --black: #191816;
+    /* --grey: #e6d9cb; */
+    --grey: #8c8e8e;
+    /* --grey: #E9ECED; */
+
+    --b1: solid red 2px;
+    --b2: solid blue 2px;
+
+
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ========================================================================= */
+
+body {
+    width: 100vw;
+    background-color: var(--grey);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main {
+    border: var(--b2);
+    width: 90%;
+    max-width: 2000px;
+    background-color: var(--white);
+    padding: 0em 2em;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0,0);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    color: var(--grey);
+    border-bottom: solid 2px var(--grey);
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 1.5em;
+}
+
+.nav {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 1em;
+}
+.active {
+    font-weight: bold;
+}
+
+.navButt {
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.login {
+    font-weight: bold;
+}
+
+.greenButt {
+    color: var(--ltGreen);
+    background-color: var(--dkGreen);
+    padding: 1em 1.5em;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.greenButt:hover {
+    background-color: var(--ltGreen);
+    color: var(--dkGreen);
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionHalf {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+.sectionSubTitle {
+    color: var(--dkYellow);
+    background-color: var(--ltYellow);
+    padding: .5em .75em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.sectionTitle {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.sectionText {
+    font-weight: 1em;
+    margin-bottom: 1em;
+}
+
+.sectionHalf .options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sectionImage {
+    height: 80%;
+    width: 80%;
+    background-image: url('./compDude.png');
+    background-size: cover;
+}
+
+.greenSection {
+    height: 30vh;
+    padding: 2em;
+    background-color: var(--xltGreen);
+}
+
+.greenheader {
+    width: 50%;
+    height: 100%;
+}
+
+.statSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span, .login {
+    color: var(--green);
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rebeccapurple;
+    }
+}
